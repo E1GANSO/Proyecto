@@ -1,0 +1,46 @@
+#Color_Head{
+    background-color: #3385ff;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    border: rgb(0, 0, 0) 1px solid;
+    text-align: center;
+}
+
+#Color_Row{
+    border: rgb(0, 0, 0) 1px solid;
+    padding: 10px 0;
+    margin-bottom: 9px;
+}
+
+#Color_Text_Button{
+    color: white;
+    background-color: #33b4ff;
+}
+
+#Text_Products{
+    text-align: center;
+}
+
+#Text_Busqueda{
+    text-align: end;
+}
+
+#Input_Text{
+    height: 36px;
+}
+
+#Color_Text{
+    color: white;
+}
+#Boton_Eliminar{
+    color: red;
+}
+
+#MiTablaPersonalizada th{
+    width: 130px;
+    overflow: auto;
+}
+
+#Color_Label{
+    color: white;
+}
