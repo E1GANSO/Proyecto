@@ -79,38 +79,3 @@ export default  function AddProduct(props){
             );
           
 }
-/* 
-
-
-<form>
-
-            <div className="col-4">
-                <div className="mb-3">
-                    <label htmlFor ="nombreProduct" className="form-label">NOMBRE</label>
-                    <input type="text" name = "nombre" className="form-control" id="nombreProduct" value = {stateForm.nombre} onChange = {gestionar_Form}/>
-                </div>
-            </div>
-
-            <div className="col-4">
-                <div className="mb-3">
-                    <label htmlFor ="marcaProduct" className="form-label">MARCA</label>
-                    <input type="text" name = "marca" className="form-control" id="marcaProduct" value = {stateForm.marca} onChange = {gestionar_Form}/>
-                </div>
-            </div>
-
-            <div className="col-4">
-                <div className="mb-3">
-                    <label htmlFor ="precioProduct" className="form-label">Precio</label>
-                    <input type="text" name="precio" className="form-control" id="precioProduct" value = {stateForm.precio} onChange = {gestionar_Form}/>
-                </div>
-            </div>
-            
-            <div>
-                <button type="submit" className="btn btn-primary" onClick ={onSubmitForm}>Agregar</button> 
-                <label id="Color_Label">EspacioTexto</label>
-                <Link to= '/' id="Color_Text">
-                <button  className="btn btn-primary">Cancelar</button>
-                </Link>
-            </div>
-            
-        </form>*/
