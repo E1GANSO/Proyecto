@@ -1,28 +1,16 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import Table from 'react-bootstrap/Table';
 import Button from "@restart/ui/esm/Button";
+import { ContextCart } from "../context/ContextCart";
 
-export default function ListCart({id, nombre, marca, precio}){
+export default function ItemCart({product}){
 
-    const Cart_Inicial = [
-        {
-            id: "",
-            nombre: "",
-            marca: "",
-            precio: 0
-        }
-    ];
-
-
-
-    const [cart, setCart] = useState(Cart_Inicial);
-    
-
+    const {incremenatar, decrementar, addP} =  useContext(ContextCart)
 
     return(
         <div>
             <h1>Carrito </h1>
-            {Cart_Inicial.map(e=>(
+            {product.map(e=>(
             <div className="col"> 
                 <Table striped bordered hover variant = "primary">
                     <thead>

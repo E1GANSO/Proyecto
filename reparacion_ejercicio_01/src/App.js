@@ -4,27 +4,22 @@ import Header from './Components/Header';
 import Products from './Components/Products';
 import {BrowserRouter } from 'react-router-dom';
 import MisRoutes from './MisRutas';
-import GridProduct from './Components/GridProduct';
+import { ContextCartProvider } from './context/ContextCart';
 
-/*
-function App() {
-  return (
-    <Container fluid>
-      <GridProduct/>
-    </Container>
-  );
-}
-*/
+
 
 function App() {
   return (
-    <Container fluid>
-      <BrowserRouter>
-        <Header/>
-        <Products/>
-        <MisRoutes/>
-      </BrowserRouter>
-    </Container>
+    <ContextCartProvider>
+      <Container fluid>
+        <BrowserRouter>
+          <Header/>
+          <Products/>
+          <MisRoutes/>
+        </BrowserRouter>
+      </Container>
+        
+    </ContextCartProvider>
   );
 }
 
