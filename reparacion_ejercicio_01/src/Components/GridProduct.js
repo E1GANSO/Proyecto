@@ -97,16 +97,4 @@ function GridProduct(){
 
     }
 
-
-
-    /*
-    return(
-            <section>
-                <div className="row">
-                    {List_Product.map(e=> (<div className="col-4"> <ItemProduct id={e.id} nombre = {e.nombre}  marca = {e.marca} precio = {e.precio}/></div>))}
-                </div>
-            </section>
-        );
-    */
-
 export default GridProduct;

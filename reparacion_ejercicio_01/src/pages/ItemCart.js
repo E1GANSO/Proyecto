@@ -1,13 +1,24 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import Table from 'react-bootstrap/Table';
 import Button from "@restart/ui/esm/Button";
-import { ContextCart } from "../context/ContextCart";
 
-export default function ItemCart({product}){
 
-    const {incremenatar, decrementar, addP} =  useContext(ContextCart)
 
-    return(
+const ItemCart = ({product}) =>{
+
+    //const {incremenatar, decrementar, clear} =  useContext(ContextCart)
+
+        return(
+            <div>
+                <h1>Carrito </h1>
+            </div>
+        );
+}
+
+export default ItemCart;
+
+/*
+return(
         <div>
             <h1>Carrito </h1>
             {product.map(e=>(
@@ -41,4 +52,4 @@ export default function ItemCart({product}){
             </div>))}
         </div>
     );
-}
+*/

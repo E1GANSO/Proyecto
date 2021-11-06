@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/esm/Col';
 import Button from 'react-bootstrap/Button'
@@ -31,9 +30,6 @@ function Products(){
         </div>
 
     );
-{/*
-    <button type="submit" className="btn btn-primary"> Agregar Producto </button>
-*/}
     
 }
 

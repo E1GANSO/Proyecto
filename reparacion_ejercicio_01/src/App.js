@@ -3,10 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
 import Products from './Components/Products';
 import {BrowserRouter } from 'react-router-dom';
-import MisRoutes from './MisRutas';
-import { ContextCartProvider } from './context/ContextCart';
-
-
+import MisRoutes from './pages/MisRutas';
+import {ContextCartProvider} from './context/ContextCart';
 
 function App() {
   return (
@@ -18,8 +16,8 @@ function App() {
           <MisRoutes/>
         </BrowserRouter>
       </Container>
-        
     </ContextCartProvider>
+    
   );
 }
 

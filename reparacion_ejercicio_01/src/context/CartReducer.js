@@ -1,16 +1,34 @@
 
-
+/*
+export const TotalPagar = (listcart) => {
+    return listcart.reduce(total, product) => total + product.quian
+}
+*/
 export const CartReducer = (state, action) =>{
     switch(action.type){
-        case 'INCREMENTAR':{
-            
-        }
 
         case 'DECREMENTAR':{
+            const productDelete = state.listcart.find(product => product.id === action.payload);
 
+            return productDelete.quantity > 1 
+            ? 
+
+            {
+                ...state,
+                cart: state.listcart.map(product =>
+                    product.id === action.payload
+                    ?   {...product, quantity: product.quantity-1}
+                    : product
+                )
+            }
+        
+            :{
+                ...state,
+                cart: state.listcart.filter(product => product.id !== action.payload)
+            }
         }
 
-        case 'ADD':{
+        case 'ADD':
             const newProduct = action.payload;
             const cartContainProduct = state.listcart.find(
                 product => product.id === newProduct.id
@@ -27,12 +45,11 @@ export const CartReducer = (state, action) =>{
             }
             :{ 
                 ...state,
-                clistcart: [
+                listcart: [
                     ...state.listcart,
                     {...action.payload, quantity: 1}
                 ]
             }
-        }
 
         case 'CLEAR':{
 
@@ -42,6 +59,8 @@ export const CartReducer = (state, action) =>{
 
         }
 
+        default:
+            return state;
     }
 }
 
